@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements & Profile | Vedant Patel </title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar styling for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        /* Style for the achievement cards */
+        .achievement-card {
+            @apply bg-slate-800 p-6 rounded-xl shadow-xl border border-slate-700 hover:border-teal-500 transition duration-300 transform hover:-translate-y-0.5;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100 antialiased">
+
+    <!-- Navbar --><header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-teal-400 hover:text-teal-300 transition duration-300">
+                Vedant Patel
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="about.html" class="hover:text-teal-400 transition">About</a>
+                <a href="vision.html" class="hover:text-teal-400 transition">Vision</a>
+                <a href="projects.html" class="hover:text-teal-400 transition">Projects</a>
+                <a href="certificates.html" class="hover:text-teal-400 transition">Achievements</a>
+                <a href="skills.html" class="hover:text-teal-400 transition">Skills</a>
+                <a href="contact.html" class="hover:text-teal-400 transition">Contact</a>
+            </div>
+
+            <button id="mobile-menu-button" class="md:hidden text-slate-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <a href="about.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">About</a>
+            <a href="vision.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Vision</a>
+            <a href="projects.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Projects</a>
+            <a href="certificates.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Achievements</a>
+            <a href="skills.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Skills</a>
+            <a href="contact.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+
+        <!-- Header Section with Photo -->
+        <section class="max-w-4xl mx-auto mb-16 p-8 bg-slate-800 rounded-xl shadow-2xl border border-slate-700">
+            <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-10">
+                
+                <!-- Photo Holder -->
+                <div class="flex-shrink-0 mb-6 md:mb-0">
+                    <img src="http://googleusercontent.com/image_generation_content/0" 
+                        onerror="this.onerror=null;this.src='https://placehold.co/180x180/164e63/ffffff?text=V+P';" 
+                        alt="Vedant Patel Profile Photo" 
+                        class="rounded-lg w-44 h-44 object-cover border-4 border-teal-500 shadow-xl" 
+                        loading="lazy">
+                </div>
+                
+                <!-- Text Content -->
+                <div class="flex-grow text-center md:text-left">
+                    <h1 class="text-4xl font-extrabold text-teal-400 mb-2">Comprehensive Profile Overview</h1>
+                    <p class="text-2xl text-slate-300 font-semibold mb-3">Vedant Patel, Prospective Ocean Engineering Student</p>
+                    <p class="text-slate-400 leading-relaxed">
+                        This summary consolidates my formal academic training, technical certifications, leadership roles, and commitment to community service, providing a holistic view of my preparation for university study.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Area with 5 Sections -->
+        <section id="certifications" class="mb-16">
+            <div class="max-w-5xl mx-auto space-y-16">
+                
+                <!-- SECTION 1: Formal Courses & Certificates -->
+                <div>
+                    <h2 class="text-3xl font-bold text-teal-400 mb-6 border-b border-slate-700 pb-2">1. Formal Courses & Certificates</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        
+                        <!-- CERTIFICATE: Hydrodynamics -->
+                        <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">Introduction to Hydrodynamics(Example)</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">Massachusetts Institute of Technology (MITx) - Certificate of Completion</p>
+                            <p class="text-slate-500 text-sm">Completed a rigorous university-level course focused on wave theory and naval architecture fundamentals. (Year: 2024)</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- SECTION 2: Technical Achievements & Competitions -->
+                <div>
+                    <h2 class="text-3xl font-bold text-teal-400 mb-6 border-b border-slate-700 pb-2">2. Technical Achievements & Competitions</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        
+                        <!-- ACHIEVEMENT: MATE ROV Competition -->
+                        <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">Click-n-Calculate Math mode-ON Competition - Runner-Up</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">Online National Level</p>
+                            <p class="text-slate-500 text-sm">I won second place because my project solved a real-world safety problem. I designed a smart mining helmet with gas sensors to detect hazardous gases, two-way communication for emergencies, and shock protection for accidents. I supported the design with mathematical data and calculations, making it both practical and reliable. (Year: 2025)</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- SECTION 3: Internships & Work Experience -->
+                <div>
+                    <h2 class="text-3xl font-bold text-teal-400 mb-6 border-b border-slate-700 pb-2">3. Internships & Work Experience</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        
+                        <!-- Placeholder 1: Internship -->
+                        <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">Summer Intern: Hydrodynamic Testing(Example)</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">[Company/Lab Name] - [City, State] - [Dates]</p>
+                            <p class="text-slate-500 text-sm">Assisted senior engineers with tank testing of model-scale offshore structures and data validation. (Replace with details)</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- SECTION 4: Leadership & Model UN -->
+                <div>
+                    <h2 class="text-3xl font-bold text-teal-400 mb-6 border-b border-slate-700 pb-2">4. Leadership & Model UN</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        
+                        <!-- Placeholder 1: Model UN -->
+
+                        <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">Discover U Assembly 12th Edition</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">Local MUN. Dates: 26 Jul-27 Jul 2025</p>
+                            <p class="text-slate-500 text-sm">Served as the International Press Head.</p>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">Turning Point X MU MUN</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">University MUN. Dates: 30 Aug-31 Aug 2025</p>
+                            <p class="text-slate-500 text-sm">Served as the delegate of Turkey and won Verble Mention.</p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">IIS MUN</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">High School MUN. Dates: 18 Apr-19 Apr 2026</p>
+                            <p class="text-slate-500 text-sm">Served as the Director General.</p>
+                        </div>
+
+                         <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">Yellow House Captain</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">Innovative International School, Rajkot</p>
+                            <p class="text-slate-500 text-sm">Served as the Yellow House Captain in 9th Grade. (Year:2024).</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- SECTION 5: Community & Outreach (Updated) -->
+                <div>
+                    <h2 class="text-3xl font-bold text-teal-400 mb-6 border-b border-slate-700 pb-2">5. Community Work & Outreach</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        
+                        <!-- Placeholder 1: STEM Mentorship (Updated) -->
+                        <div class="achievement-card">
+                            <h3 class="text-xl font-bold text-teal-300 mb-1">Computer Application Mentor for High School</h3>
+                            <p class="text-slate-400 text-sm mb-2 font-semibold">At Innovative International School, Rajkot - [1 month]</p>
+                            <p class="text-slate-500 text-sm">During my 10th grade, I took the initiative to teach my classmates Computer Applications for one month in the absence of our faculty. I covered topics such as HTML, CSS, Python, and other foundational computing concepts, helping peers understand both theory and practical implementation.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-slate-900 border-t border-slate-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
+            &copy; 2025 Vedant Patel Portfolio. Dedicated to Ocean Engineering.
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Functionality --><script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>

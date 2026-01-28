@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Portfolio | Vedant Patel</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar styling for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        /* Smooth scroll effect for internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100 antialiased">
+
+    <!-- Navbar --><header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-teal-400 hover:text-teal-300 transition duration-300">
+                Vedant Patel
+            </a>
+            
+            <!-- Desktop Navigation --><div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="about.html" class="hover:text-teal-400 transition">About</a>
+                <a href="vision.html" class="hover:text-teal-400 transition">Vision</a>
+                <a href="projects.html" class="hover:text-teal-400 transition">Projects</a>
+                <a href="certificates.html" class="hover:text-teal-400 transition">Achievements</a>
+                <a href="skills.html" class="hover:text-teal-400 transition">Skills</a>
+                <a href="contact.html" class="hover:text-teal-400 transition">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger Icon) --><button id="mobile-menu-button" class="md:hidden text-slate-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) --><div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <a href="about.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition">About</a>
+            <a href="vision.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition">Vision</a>
+            <a href="projects.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition">Projects</a>
+            <a href="certificates.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition">Achievements</a>
+            <a href="skills.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition">Skills</a>
+            <a href="contact.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section (Remains the same as a welcoming point) --><section id="hero" class="py-24 md:py-36 text-center">
+            <p class="text-xl text-teal-400 mb-2 font-medium">Preparing for a Career in Ocean Engineering</p>
+            <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight mb-6">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">Vedant Patel</span>
+            </h1>
+            <p class="text-lg sm:text-xl max-w-3xl mx-auto text-slate-400 mb-10">
+                A dedicated high school senior passionate about designing and building technology for the marine environment, focusing on sustainability and deep-sea exploration.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="projects.html" class="px-6 py-3 bg-teal-600 text-white font-semibold rounded-lg shadow-lg hover:bg-teal-500 transition duration-300 transform hover:scale-105">
+                    View My Work
+                </a>
+                <a href="contact.html" class="px-6 py-3 bg-slate-700 text-slate-200 font-semibold rounded-lg shadow-md hover:bg-slate-600 transition duration-300 transform hover:scale-105">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Overview Sections with Links to Full Pages --><section id="overview-links" class="py-12 md:py-20 border-t border-slate-800">
+            <h2 class="text-4xl font-bold mb-12 text-center">Explore My Portfolio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <a href="about.html" class="block bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 hover:border-teal-500 transition duration-300 transform hover:-translate-y-2 group">
+                    <h3 class="text-3xl font-bold text-teal-400 mb-4 group-hover:text-teal-300 transition">About Me</h3>
+                    <p class="text-slate-400 text-lg mb-6">Learn about my journey, passions, and achievements in Ocean Engineering.</p>
+                    <span class="text-teal-400 font-semibold flex items-center group-hover:text-teal-300 transition">
+                        Read More 
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <a href="vision.html" class="block bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 hover:border-teal-500 transition duration-300 transform hover:-translate-y-2 group">
+                    <h3 class="text-3xl font-bold text-teal-400 mb-4 group-hover:text-teal-300 transition">My Vision</h3>
+                    <p class="text-slate-400 text-lg mb-6">Discover my aspirations and how I aim to impact the future of ocean technology.</p>
+                    <span class="text-teal-400 font-semibold flex items-center group-hover:text-teal-300 transition">
+                        See My Vision 
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <a href="projects.html" class="block bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 hover:border-teal-500 transition duration-300 transform hover:-translate-y-2 group">
+                    <h3 class="text-3xl font-bold text-teal-400 mb-4 group-hover:text-teal-300 transition">Projects</h3>
+                    <p class="text-slate-400 text-lg mb-6">Dive into my featured engineering projects and technical work.</p>
+                    <span class="text-teal-400 font-semibold flex items-center group-hover:text-teal-300 transition">
+                        View Projects 
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <a href="certificates.html" class="block bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 hover:border-teal-500 transition duration-300 transform hover:-translate-y-2 group">
+                    <h3 class="text-3xl font-bold text-teal-400 mb-4 group-hover:text-teal-300 transition">Achievements</h3>
+                    <p class="text-slate-400 text-lg mb-6">Explore my formal certifications and academic achievements.</p>
+                    <span class="text-teal-400 font-semibold flex items-center group-hover:text-teal-300 transition">
+                        See Achievements
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <a href="skills.html" class="block bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 hover:border-teal-500 transition duration-300 transform hover:-translate-y-2 group">
+                    <h3 class="text-3xl font-bold text-teal-400 mb-4 group-hover:text-teal-300 transition">Skills</h3>
+                    <p class="text-slate-400 text-lg mb-6">Review my technical proficiencies and engineering tools.</p>
+                    <span class="text-teal-400 font-semibold flex items-center group-hover:text-teal-300 transition">
+                        Browse Skills 
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <a href="contact.html" class="block bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 hover:border-teal-500 transition duration-300 transform hover:-translate-y-2 group">
+                    <h3 class="text-3xl font-bold text-teal-400 mb-4 group-hover:text-teal-300 transition">Contact</h3>
+                    <p class="text-slate-400 text-lg mb-6">Reach out to me for collaborations or inquiries.</p>
+                    <span class="text-teal-400 font-semibold flex items-center group-hover:text-teal-300 transition">
+                        Connect Now 
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-slate-900 border-t border-slate-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
+            &copy; 2025 Vedant Patel Portfolio. Dedicated to Ocean Engineering.
+        </div>
+    </footer>
+
+    <!-- Custom Tailwind Styles (to define the skill-badge utility) --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0d9488', // teal-600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .skill-badge {
+            @apply px-4 py-2 bg-slate-700 text-teal-300 font-medium rounded-full text-sm shadow-md transition duration-200 hover:bg-teal-600 hover:text-white;
+        }
+    </style>
+
+    <!-- JavaScript for Mobile Menu Functionality --><script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        /**
+         * Toggles the visibility of the mobile navigation menu.
+         */
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Attach the event listener to the button
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        // Optional: Hide menu when resizing back to desktop view
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>

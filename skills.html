@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Vedant Patel</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar styling for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        .skill-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #1e293b; /* slate-800 */
+            color: #20c997; /* Teal-based color */
+            font-weight: 500;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+            border: 1px solid #334155; /* slate-700 */
+        }
+        .skill-badge:hover {
+            background: #14b8a6; /* teal-500 */
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100 antialiased">
+
+    <!-- Navbar --><header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-teal-400 hover:text-teal-300 transition duration-300">
+                Vedant Patel
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="about.html" class="hover:text-teal-400 transition">About</a>
+                <a href="vision.html" class="hover:text-teal-400 transition">Vision</a>
+                <a href="projects.html" class="hover:text-teal-400 transition">Projects</a>
+                <a href="certificates.html" class="hover:text-teal-400 transition">Achievements</a>
+                <a href="skills.html" class="hover:text-teal-400 transition">Skills</a>
+                <a href="contact.html" class="hover:text-teal-400 transition">Contact</a>
+            </div>
+
+            <button id="mobile-menu-button" class="md:hidden text-slate-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <a href="about.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">About</a>
+            <a href="vision.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Vision</a>
+            <a href="projects.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Projects</a>
+            <a href="certificates.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Certificates</a>
+            <a href="skills.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Skills</a>
+            <a href="contact.html" class="block py-3 px-4 text-slate-200 hover:bg-slate-700 transition" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+
+        <!-- Skills & Technologies Section --><section id="skills" class="mb-16">
+            <h1 class="text-5xl font-extrabold text-center text-teal-400 mb-6">Skills</h1>
+            <p class="text-xl text-slate-400 mb-12 text-center max-w-3xl mx-auto">
+                My Technical Toolbox for Deep-Sea Exploration and Ocean Engineering.
+            </p>
+            
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Category 1: Core Engineering Disciplines -->
+                <h2 class="text-3xl font-semibold text-teal-400 mb-4 border-b border-slate-700 pb-2">Core Engineering & Science</h2>
+                <p class="text-slate-400 mb-6">Foundational principles applied across all projects and research.</p>
+                <div class="flex flex-wrap justify-start gap-4 mb-10">
+                    <span class="skill-badge">Hydrodynamics & Fluid Mechanics(Example)</span>
+                </div>
+
+                <!-- Category 2: Software & Computational Tools -->
+                <h2 class="text-3xl font-semibold text-teal-400 mb-4 border-b border-slate-700 pb-2">Software & Computational Tools</h2>
+                <p class="text-slate-400 mb-6">Proficiency in design, simulation, and data handling.</p>
+                <div class="flex flex-wrap justify-start gap-4 mb-10">
+                    <span class="skill-badge">SolidWorks / CAD</span>
+                    <span class="skill-badge">MATLAB</span>
+                    <span class="skill-badge">Python (Pandas, NumPy, Matplotlib)</span>
+                    <span class="skill-badge">C++ (Embedded Systems)</span>
+                    <span class="skill-badge">ArcGIS / GIS Mapping</span>
+                </div>
+
+                <!-- Category 3: Hands-on Hardware & Prototyping -->
+                <h2 class="text-3xl font-semibold text-teal-400 mb-4 border-b border-slate-700 pb-2">Hands-on Hardware & Prototyping</h2>
+                <p class="text-slate-400 mb-6">Practical skills in construction, testing, and system integration.</p>
+                <div class="flex flex-wrap justify-start gap-4 mb-10">
+                    <span class="skill-badge">Arduino & Raspberry Pi Programming</span>
+                    <span class="skill-badge">Sensor Integration (Pressure, pH, DO)</span>
+                    <span class="skill-badge">3D Printing / Rapid Prototyping</span>
+                    <span class="skill-badge">Soldering & Circuit Assembly</span>
+                    <span class="skill-badge">Troubleshooting & Diagnostics</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-slate-900 border-t border-slate-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
+            &copy; 2025 Vedant Patel Portfolio. Dedicated to Ocean Engineering.
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Functionality --><script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
